@@ -1,0 +1,54 @@
+.activites-card {
+  display: flex;
+  gap: 30px;
+}
+
+.activites-card a {
+  width: 100%;
+}
+
+.card-activite {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-activite img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card-activite .card-content {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.card-activite .card-title {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .card-activite img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .activites-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card-activite img {
+    height: 150px;
+  }
+}

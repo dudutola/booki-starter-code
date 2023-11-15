@@ -1,0 +1,56 @@
+.hébergements-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hébergements-card .card {
+  height: 94%;
+}
+
+.hébergements-card a {
+  flex-grow: 1;
+  width: 24%;
+}
+
+.img-card {
+  width: 100%;
+  height: 105px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-bottom: 4px;
+}
+
+.hébergements-card .card-content {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hébergements-card .card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.hébergements-card .card-subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+
+@media (max-width: 767.98px) {
+  .hébergements-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .hébergements-card a {
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--filter-color);
+  border-radius: 30px;
+  padding: 0 16px;
+}
+
+.filter i {
+  font-size: 20px;
+}
+
+.filter p {
+  font-size: 17px;
+}
+
+
+.filter:hover {
+  background-color: #DEEBFF;
+}
+
+@media (max-width: 1024px) {
+  .filter p {
+    font-size: var(--font-body-size);
+  }
+}
+
+@media (max-width: 767.98px) {
+ .filter {
+    width: 36%;
+    flex-grow: 1;
+  }
+
+  .filter p {
+    font-size: var(--font-body-text);
+  }
+}
