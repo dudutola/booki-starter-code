@@ -1,8 +1,8 @@
-@import '/css/components/search-bar.css';
-@import '/css/components/filter.css';
-@import '/css/components/card-hebergements.css';
-@import '/css/components/card-populaires.css';
-@import '/css/components/card-activites.css';
+@import './components/search-bar.css';
+@import './components/filter.css';
+@import './components/card-hebergements.css';
+@import './components/card-populaires.css';
+@import './components/card-activites.css';
 
 /****** General ***********/
 * {
@@ -208,8 +208,7 @@ a {
 /****** Footer ***********/
 .information {
   background-color: var(--main-bg-color);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   margin-top: 35px;
 }
 
@@ -218,6 +217,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 31%;
 }
 
 .content-title {
@@ -254,7 +254,6 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
     .main-container {
       padding: 0;
     }
@@ -285,6 +284,7 @@ a {
       width: 100%;
       padding-top: 0;
       padding-bottom: 15px;
+      border-bottom: 2px solid var(--main-bg-color);
     }
 
     .nav-menu a:hover {
@@ -318,12 +318,12 @@ a {
 
     /* infobar  */
     .info-icon {
-        width: 30px;
-        height: 26px;
+      width: 30px;
+      height: 26px;
     }
 
     .info-txt {
-        margin: 0;
+      margin: 0;
     }
 
     /* hebergements-and-populaire */
@@ -362,6 +362,7 @@ a {
     /* Activites */
     .activites {
       padding: 30px;
+      background-color: #FFFFFF;
     }
 
     .activites-section {
@@ -374,9 +375,11 @@ a {
       flex-direction: column;
       gap: 50px;
       padding: 30px;
+      width: 85%;
     }
 
     .content {
       padding: 0;
+      width: 100%;
     }
 }
