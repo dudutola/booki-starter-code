@@ -1,7 +1,6 @@
 .search-bar {
   display: flex;
   margin: 35px 0;
-  border: 1px solid var(--main-bg-color);
   border-radius: 18px;
   width: fit-content;
 }
@@ -16,22 +15,21 @@
 
 .form-search {
   display: flex;
-  flex-grow: 1;
 }
 
 #search {
-  border: 0;
+  border: 1px solid var(--main-bg-color);
+  padding-left: 24px;
 }
 
-#search::placeholder {
+#search::placeholder, #search {
   font-weight: bold;
-  text-align: center;
   font-size: var(--font-body-subtitle);
   color: black;
 }
 
 #search:focus-visible {
-  outline: 1px solid var(--main-bg-color);
+  outline: 0px solid var(--main-bg-color);
 }
 
 .button {
@@ -66,6 +64,8 @@
     display: inline-block;
     padding: 16px;
     box-shadow: 0 6px 4px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: -12px;
   }
 
   .loupe .fa-solid {
@@ -73,6 +73,6 @@
   }
 
   #search {
-    flex-grow: 1;
+    width: 74%;
   }
 }

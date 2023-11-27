@@ -53,4 +53,8 @@
   .hébergements-card a {
     width: 100%;
   }
+
+  .img-card {
+    height: 124px;
+  }
 }
